@@ -1,0 +1,3071 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0912.1023                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='0d1d134a7b411c8002bf03caab2e143c5da80f92bd30c97cec016e22677cd3d9' _.fcp.WorkbookFingerprinting.true...creator-author-id='0d1d134a7b411c8002bf03caab2e143c5da80f92bd30c97cec016e22677cd3d9' _.fcp.WorkbookFingerprinting.true...creator-license-type='free' _.fcp.WorkbookFingerprinting.true...creator-machine-id='e63af38860d3cfe022d17cb516bdf910c4f82ae6a11c79cea5df1f1c0cce7750' _.fcp.WorkbookFingerprinting.true...license-type='free' _.fcp.WorkbookFingerprinting.true...machine-id='e63af38860d3cfe022d17cb516bdf910c4f82ae6a11c79cea5df1f1c0cce7750' original-version='18.1' source-build='2026.2.3 (20262.26.0912.1023)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelRelationshipPerfOptions />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='myapp_studentmark+ (college_db)' inline='true' name='federated.1hqvnc30j9buy51fj19z50yqfc7f' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='localhost' name='mysql.1q5g77s1r2gczb11ec2nx1fxa3ke'>
+            <connection class='mysql' dbname='college_db' odbc-native-protocol='' one-time-sql='' port='3306' server='localhost' source-charset='' username='root' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='mysql.1q5g77s1r2gczb11ec2nx1fxa3ke' name='academicyear' table='[academicyear]' type='table' />
+          <relation connection='mysql.1q5g77s1r2gczb11ec2nx1fxa3ke' name='myapp_student' table='[myapp_student]' type='table' />
+          <relation connection='mysql.1q5g77s1r2gczb11ec2nx1fxa3ke' name='department' table='[department]' type='table' />
+          <relation connection='mysql.1q5g77s1r2gczb11ec2nx1fxa3ke' name='myapp_studentmark' table='[myapp_studentmark]' type='table' />
+          <relation connection='mysql.1q5g77s1r2gczb11ec2nx1fxa3ke' name='myappstaff' table='[myappstaff]' type='table' />
+          <relation connection='mysql.1q5g77s1r2gczb11ec2nx1fxa3ke' name='timetable' table='[timetable]' type='table' />
+          <relation connection='mysql.1q5g77s1r2gczb11ec2nx1fxa3ke' name='subject' table='[subject]' type='table' />
+        </relation>
+        <cols>
+          <map key='[admission_date]' value='[myapp_student].[admission_date]' />
+          <map key='[age (myappstaff)]' value='[myappstaff].[age]' />
+          <map key='[age]' value='[myapp_student].[age]' />
+          <map key='[day]' value='[timetable].[day]' />
+          <map key='[department (myappstaff)]' value='[myappstaff].[department]' />
+          <map key='[department]' value='[myapp_student].[department]' />
+          <map key='[dept_name]' value='[department].[dept_name]' />
+          <map key='[dob (myappstaff)]' value='[myappstaff].[dob]' />
+          <map key='[dob]' value='[myapp_student].[dob]' />
+          <map key='[email (myappstaff)]' value='[myappstaff].[email]' />
+          <map key='[email]' value='[myapp_student].[email]' />
+          <map key='[end_time]' value='[timetable].[end_time]' />
+          <map key='[external_marks]' value='[myapp_studentmark].[external_marks]' />
+          <map key='[id (department)]' value='[department].[id]' />
+          <map key='[id (myapp_student)]' value='[myapp_student].[id]' />
+          <map key='[id (myappstaff)]' value='[myappstaff].[id]' />
+          <map key='[id (subject)]' value='[subject].[id]' />
+          <map key='[id (timetable)]' value='[timetable].[id]' />
+          <map key='[id]' value='[myapp_studentmark].[id]' />
+          <map key='[internal_marks]' value='[myapp_studentmark].[internal_marks]' />
+          <map key='[name (myappstaff)]' value='[myappstaff].[name]' />
+          <map key='[name]' value='[myapp_student].[name]' />
+          <map key='[phone (myappstaff)]' value='[myappstaff].[phone]' />
+          <map key='[phone]' value='[myapp_student].[phone]' />
+          <map key='[room_number]' value='[timetable].[room_number]' />
+          <map key='[staff_id (timetable)]' value='[timetable].[staff_id]' />
+          <map key='[staff_id]' value='[myapp_studentmark].[staff_id]' />
+          <map key='[start_time]' value='[timetable].[start_time]' />
+          <map key='[student_id]' value='[myapp_studentmark].[student_id]' />
+          <map key='[subject_code]' value='[subject].[subject_code]' />
+          <map key='[subject_id (timetable)]' value='[timetable].[subject_id]' />
+          <map key='[subject_id]' value='[myapp_studentmark].[subject_id]' />
+          <map key='[subject_name]' value='[subject].[subject_name]' />
+          <map key='[total_marks]' value='[myapp_studentmark].[total_marks]' />
+          <map key='[year_id (academicyear)]' value='[academicyear].[year_id]' />
+          <map key='[year_id (timetable)]' value='[timetable].[year_id]' />
+          <map key='[year_id]' value='[myapp_student].[year_id]' />
+          <map key='[year_name]' value='[academicyear].[year_name]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>year_id</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[year_id (academicyear)]</local-name>
+            <parent-name>[academicyear]</parent-name>
+            <remote-alias>year_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[academicyear_BBAE719DC87042BB9B79BC74C13F8E83]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[year_name]</local-name>
+            <parent-name>[academicyear]</parent-name>
+            <remote-alias>year_name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>20</width>
+            <contains-null>false</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[academicyear_BBAE719DC87042BB9B79BC74C13F8E83]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id (myapp_student)]</local-name>
+            <parent-name>[myapp_student]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+            <object-id>[myapp_student_A147E3F8C4624E1EBF9DA78DBAC88323]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[myapp_student]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>100</width>
+            <contains-null>false</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[myapp_student_A147E3F8C4624E1EBF9DA78DBAC88323]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[myapp_student]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[myapp_student_A147E3F8C4624E1EBF9DA78DBAC88323]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dob</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[dob]</local-name>
+            <parent-name>[myapp_student]</parent-name>
+            <remote-alias>dob</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+            </attributes>
+            <object-id>[myapp_student_A147E3F8C4624E1EBF9DA78DBAC88323]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>phone</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[phone]</local-name>
+            <parent-name>[myapp_student]</parent-name>
+            <remote-alias>phone</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>10</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[myapp_student_A147E3F8C4624E1EBF9DA78DBAC88323]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>email</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[email]</local-name>
+            <parent-name>[myapp_student]</parent-name>
+            <remote-alias>email</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>254</width>
+            <contains-null>false</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[myapp_student_A147E3F8C4624E1EBF9DA78DBAC88323]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>department</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[department]</local-name>
+            <parent-name>[myapp_student]</parent-name>
+            <remote-alias>department</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>100</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[myapp_student_A147E3F8C4624E1EBF9DA78DBAC88323]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>admission_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[admission_date]</local-name>
+            <parent-name>[myapp_student]</parent-name>
+            <remote-alias>admission_date</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+            </attributes>
+            <object-id>[myapp_student_A147E3F8C4624E1EBF9DA78DBAC88323]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year_id</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[year_id]</local-name>
+            <parent-name>[myapp_student]</parent-name>
+            <remote-alias>year_id</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[myapp_student_A147E3F8C4624E1EBF9DA78DBAC88323]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id (department)]</local-name>
+            <parent-name>[department]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+            <object-id>[department_FBFBA611B32D4A33BE92342C1AE70950]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dept_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[dept_name]</local-name>
+            <parent-name>[department]</parent-name>
+            <remote-alias>dept_name</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>100</width>
+            <contains-null>false</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[department_FBFBA611B32D4A33BE92342C1AE70950]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[myapp_studentmark]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+            <object-id>[myapp_studentmark_A3721C24369D4BB59461380DD79B344D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>student_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[student_id]</local-name>
+            <parent-name>[myapp_studentmark]</parent-name>
+            <remote-alias>student_id</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+            <object-id>[myapp_studentmark_A3721C24369D4BB59461380DD79B344D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>subject_id</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[subject_id]</local-name>
+            <parent-name>[myapp_studentmark]</parent-name>
+            <remote-alias>subject_id</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[myapp_studentmark_A3721C24369D4BB59461380DD79B344D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>staff_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[staff_id]</local-name>
+            <parent-name>[myapp_studentmark]</parent-name>
+            <remote-alias>staff_id</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+            <object-id>[myapp_studentmark_A3721C24369D4BB59461380DD79B344D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>internal_marks</remote-name>
+            <remote-type>18</remote-type>
+            <local-name>[internal_marks]</local-name>
+            <parent-name>[myapp_studentmark]</parent-name>
+            <remote-alias>internal_marks</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>5</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_SMALLINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_USHORT&quot;</attribute>
+            </attributes>
+            <object-id>[myapp_studentmark_A3721C24369D4BB59461380DD79B344D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>external_marks</remote-name>
+            <remote-type>18</remote-type>
+            <local-name>[external_marks]</local-name>
+            <parent-name>[myapp_studentmark]</parent-name>
+            <remote-alias>external_marks</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>5</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_SMALLINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_USHORT&quot;</attribute>
+            </attributes>
+            <object-id>[myapp_studentmark_A3721C24369D4BB59461380DD79B344D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_marks</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[total_marks]</local-name>
+            <parent-name>[myapp_studentmark]</parent-name>
+            <remote-alias>total_marks</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[myapp_studentmark_A3721C24369D4BB59461380DD79B344D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id (myappstaff)]</local-name>
+            <parent-name>[myappstaff]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+            <object-id>[myappstaff_75F5A94ABA2A4A04AB3531AC1837C2AD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[name (myappstaff)]</local-name>
+            <parent-name>[myappstaff]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>100</width>
+            <contains-null>false</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[myappstaff_75F5A94ABA2A4A04AB3531AC1837C2AD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[age (myappstaff)]</local-name>
+            <parent-name>[myappstaff]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[myappstaff_75F5A94ABA2A4A04AB3531AC1837C2AD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dob</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[dob (myappstaff)]</local-name>
+            <parent-name>[myappstaff]</parent-name>
+            <remote-alias>dob</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+            </attributes>
+            <object-id>[myappstaff_75F5A94ABA2A4A04AB3531AC1837C2AD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>phone</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[phone (myappstaff)]</local-name>
+            <parent-name>[myappstaff]</parent-name>
+            <remote-alias>phone</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>10</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[myappstaff_75F5A94ABA2A4A04AB3531AC1837C2AD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>email</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[email (myappstaff)]</local-name>
+            <parent-name>[myappstaff]</parent-name>
+            <remote-alias>email</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>254</width>
+            <contains-null>false</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[myappstaff_75F5A94ABA2A4A04AB3531AC1837C2AD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>department</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[department (myappstaff)]</local-name>
+            <parent-name>[myappstaff]</parent-name>
+            <remote-alias>department</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[myappstaff_75F5A94ABA2A4A04AB3531AC1837C2AD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[id (timetable)]</local-name>
+            <parent-name>[timetable]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[timetable_993B6AA9D8F9479DB27BF12DA82183A7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>staff_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[staff_id (timetable)]</local-name>
+            <parent-name>[timetable]</parent-name>
+            <remote-alias>staff_id</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+            <object-id>[timetable_993B6AA9D8F9479DB27BF12DA82183A7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>subject_id</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[subject_id (timetable)]</local-name>
+            <parent-name>[timetable]</parent-name>
+            <remote-alias>subject_id</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[timetable_993B6AA9D8F9479DB27BF12DA82183A7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[day]</local-name>
+            <parent-name>[timetable]</parent-name>
+            <remote-alias>day</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>15</width>
+            <contains-null>false</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[timetable_993B6AA9D8F9479DB27BF12DA82183A7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_time</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[start_time]</local-name>
+            <parent-name>[timetable]</parent-name>
+            <remote-alias>start_time</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <precision>8</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIME&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIME&quot;</attribute>
+            </attributes>
+            <object-id>[timetable_993B6AA9D8F9479DB27BF12DA82183A7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end_time</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[end_time]</local-name>
+            <parent-name>[timetable]</parent-name>
+            <remote-alias>end_time</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <precision>8</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIME&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIME&quot;</attribute>
+            </attributes>
+            <object-id>[timetable_993B6AA9D8F9479DB27BF12DA82183A7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>room_number</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[room_number]</local-name>
+            <parent-name>[timetable]</parent-name>
+            <remote-alias>room_number</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>20</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[timetable_993B6AA9D8F9479DB27BF12DA82183A7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year_id</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[year_id (timetable)]</local-name>
+            <parent-name>[timetable]</parent-name>
+            <remote-alias>year_id</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[timetable_993B6AA9D8F9479DB27BF12DA82183A7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[id (subject)]</local-name>
+            <parent-name>[subject]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[subject_733103C71ACB4AEFAB8F3ADFFA1B1B2F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>subject_code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[subject_code]</local-name>
+            <parent-name>[subject]</parent-name>
+            <remote-alias>subject_code</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>20</width>
+            <contains-null>false</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[subject_733103C71ACB4AEFAB8F3ADFFA1B1B2F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>subject_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[subject_name]</local-name>
+            <parent-name>[subject]</parent-name>
+            <remote-alias>subject_name</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>100</width>
+            <contains-null>false</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[subject_733103C71ACB4AEFAB8F3ADFFA1B1B2F]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Calculation1]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='ZN([Calculation_0532499403706368]) - LOOKUP(ZN([Calculation_0532499403706368]), -1)'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='True Student Average' datatype='real' name='[Calculation_0116608807878659]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [name] : AVG([internal_marks] + [external_marks]) }' />
+      </column>
+      <column caption='Student-Staff Ratio' datatype='real' name='[Calculation_0116608828649476]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([student_id]) / COUNTD([staff_id])' />
+      </column>
+      <column caption='Student Count' datatype='integer' name='[Calculation_0532499403706368]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='ZN(COUNTD([id]))' />
+      </column>
+      <column caption='Status' datatype='string' name='[Calculation_0532499430486017]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;ACTIVE&quot;' />
+      </column>
+      <column caption='Derived Department' datatype='string' name='[Calculation_0725738653859840]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF STARTSWITH([subject_code], &quot;CS&quot;) THEN &quot;Computer Science&quot;&#13;&#10;ELSEIF STARTSWITH([subject_code], &quot;EC&quot;) THEN &quot;Electronics&quot;&#13;&#10;ELSEIF STARTSWITH([subject_code], &quot;ME&quot;) THEN &quot;Mechanical&quot;&#13;&#10;ELSE &quot;Other&quot;&#13;&#10;END' />
+      </column>
+      <column caption='academicyear' datatype='table' name='[__tableau_internal_object_id__].[academicyear_BBAE719DC87042BB9B79BC74C13F8E83]' role='measure' type='quantitative' />
+      <column caption='department' datatype='table' name='[__tableau_internal_object_id__].[department_FBFBA611B32D4A33BE92342C1AE70950]' role='measure' type='quantitative' />
+      <column caption='myapp_student' datatype='table' name='[__tableau_internal_object_id__].[myapp_student_A147E3F8C4624E1EBF9DA78DBAC88323]' role='measure' type='quantitative' />
+      <column caption='myapp_studentmark' datatype='table' name='[__tableau_internal_object_id__].[myapp_studentmark_A3721C24369D4BB59461380DD79B344D]' role='measure' type='quantitative' />
+      <column caption='myappstaff' datatype='table' name='[__tableau_internal_object_id__].[myappstaff_75F5A94ABA2A4A04AB3531AC1837C2AD]' role='measure' type='quantitative' />
+      <column caption='subject' datatype='table' name='[__tableau_internal_object_id__].[subject_733103C71ACB4AEFAB8F3ADFFA1B1B2F]' role='measure' type='quantitative' />
+      <column caption='timetable' datatype='table' name='[__tableau_internal_object_id__].[timetable_993B6AA9D8F9479DB27BF12DA82183A7]' role='measure' type='quantitative' />
+      <column caption='Admission Date' datatype='date' name='[admission_date]' role='dimension' type='ordinal' />
+      <column caption='Age (Myappstaff)' datatype='integer' name='[age (myappstaff)]' role='measure' type='quantitative' />
+      <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+      <column caption='Attendance Status' datatype='string' name='[attendance_status]' role='dimension' type='nominal' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Day' datatype='string' name='[day]' role='dimension' type='nominal' />
+      <column caption='Department (Myappstaff)' datatype='integer' name='[department (myappstaff)]' role='dimension' type='ordinal' />
+      <column caption='Department' datatype='string' name='[department]' role='dimension' type='nominal' />
+      <column caption='Dept Name' datatype='string' name='[dept_name]' role='dimension' type='nominal' />
+      <column caption='Dob (Myappstaff)' datatype='date' name='[dob (myappstaff)]' role='dimension' type='ordinal' />
+      <column caption='Dob' datatype='date' name='[dob]' role='dimension' type='ordinal' />
+      <column caption='Email (Myappstaff)' datatype='string' name='[email (myappstaff)]' role='dimension' type='nominal' />
+      <column caption='Email' datatype='string' name='[email]' role='dimension' type='nominal' />
+      <column aggregation='Hour' caption='End Time' datatype='datetime' name='[end_time]' role='dimension' type='ordinal' />
+      <column caption='External Marks' datatype='integer' name='[external_marks]' role='measure' type='quantitative' />
+      <column caption='Id (Department)' datatype='integer' name='[id (department)]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Id (Myapp Student)' datatype='integer' name='[id (myapp_student)]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Id (Myappstaff)' datatype='integer' name='[id (myappstaff)]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Id (Subject)' datatype='integer' name='[id (subject)]' role='dimension' type='ordinal' />
+      <column caption='Id (Timetable)' datatype='integer' name='[id (timetable)]' role='dimension' type='ordinal' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Internal Marks' datatype='integer' name='[internal_marks]' role='measure' type='quantitative' />
+      <column caption='Name (Myappstaff)' datatype='string' name='[name (myappstaff)]' role='dimension' type='nominal' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Phone (Myappstaff)' datatype='string' name='[phone (myappstaff)]' role='dimension' type='nominal' />
+      <column caption='Phone' datatype='string' name='[phone]' role='dimension' type='nominal' />
+      <column caption='Room Number' datatype='string' name='[room_number]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Staff Id (Timetable)' datatype='integer' name='[staff_id (timetable)]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Staff Id' datatype='integer' name='[staff_id]' role='dimension' type='ordinal' />
+      <column aggregation='Hour' caption='Start Time' datatype='datetime' name='[start_time]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Student Id (Myapp Attendance)' datatype='integer' name='[student_id (myapp_attendance)]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Student Id' datatype='integer' name='[student_id]' role='dimension' type='ordinal' />
+      <column caption='Subject Code' datatype='string' name='[subject_code]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Subject Id (Timetable)' datatype='integer' name='[subject_id (timetable)]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Subject Id' datatype='integer' name='[subject_id]' role='dimension' type='ordinal' />
+      <column caption='Subject Name' datatype='string' name='[subject_name]' role='dimension' type='nominal' />
+      <column caption='Total Marks' datatype='integer' name='[total_marks]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Year Id (Academicyear)' datatype='integer' name='[year_id (academicyear)]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Year Id (Timetable)' datatype='integer' name='[year_id (timetable)]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Year Id' datatype='integer' name='[year_id]' role='dimension' type='ordinal' />
+      <column caption='Year Name' datatype='string' name='[year_name]' role='dimension' type='nominal' />
+      <column-instance column='[Calculation_0532499430486017]' derivation='None' name='[none:Calculation_0532499430486017:nk]' pivot='key' type='nominal' />
+      <column-instance column='[year_name]' derivation='None' name='[none:year_name:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_0532499430486017:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;ACTIVE&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:year_name:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;1st year&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2nd year&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='academicyear' id='academicyear_BBAE719DC87042BB9B79BC74C13F8E83'>
+            <properties context=''>
+              <relation connection='mysql.1q5g77s1r2gczb11ec2nx1fxa3ke' name='academicyear' table='[academicyear]' type='table' />
+            </properties>
+          </object>
+          <object caption='department' id='department_FBFBA611B32D4A33BE92342C1AE70950'>
+            <properties context=''>
+              <relation connection='mysql.1q5g77s1r2gczb11ec2nx1fxa3ke' name='department' table='[department]' type='table' />
+            </properties>
+          </object>
+          <object caption='myapp_student' id='myapp_student_A147E3F8C4624E1EBF9DA78DBAC88323'>
+            <properties context=''>
+              <relation connection='mysql.1q5g77s1r2gczb11ec2nx1fxa3ke' name='myapp_student' table='[myapp_student]' type='table' />
+            </properties>
+          </object>
+          <object caption='myapp_studentmark' id='myapp_studentmark_A3721C24369D4BB59461380DD79B344D'>
+            <properties context=''>
+              <relation connection='mysql.1q5g77s1r2gczb11ec2nx1fxa3ke' name='myapp_studentmark' table='[myapp_studentmark]' type='table' />
+            </properties>
+          </object>
+          <object caption='myappstaff' id='myappstaff_75F5A94ABA2A4A04AB3531AC1837C2AD'>
+            <properties context=''>
+              <relation connection='mysql.1q5g77s1r2gczb11ec2nx1fxa3ke' name='myappstaff' table='[myappstaff]' type='table' />
+            </properties>
+          </object>
+          <object caption='subject' id='subject_733103C71ACB4AEFAB8F3ADFFA1B1B2F'>
+            <properties context=''>
+              <relation connection='mysql.1q5g77s1r2gczb11ec2nx1fxa3ke' name='subject' table='[subject]' type='table' />
+            </properties>
+          </object>
+          <object caption='timetable' id='timetable_993B6AA9D8F9479DB27BF12DA82183A7'>
+            <properties context=''>
+              <relation connection='mysql.1q5g77s1r2gczb11ec2nx1fxa3ke' name='timetable' table='[timetable]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[department]' />
+              <expression op='[dept_name]' />
+            </expression>
+            <first-end-point object-id='myapp_student_A147E3F8C4624E1EBF9DA78DBAC88323' />
+            <second-end-point object-id='department_FBFBA611B32D4A33BE92342C1AE70950' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[year_id (academicyear)]' />
+              <expression op='[year_id]' />
+            </expression>
+            <first-end-point is-db-set-unique-key='true' object-id='academicyear_BBAE719DC87042BB9B79BC74C13F8E83' unique-key='true' />
+            <second-end-point object-id='myapp_student_A147E3F8C4624E1EBF9DA78DBAC88323' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[id (myapp_student)]' />
+              <expression op='[student_id]' />
+            </expression>
+            <first-end-point is-db-set-unique-key='true' object-id='myapp_student_A147E3F8C4624E1EBF9DA78DBAC88323' unique-key='true' />
+            <second-end-point guaranteed-value='true' is-db-set-guaranteed-value='true' object-id='myapp_studentmark_A3721C24369D4BB59461380DD79B344D' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[staff_id]' />
+              <expression op='[id (myappstaff)]' />
+            </expression>
+            <first-end-point guaranteed-value='true' is-db-set-guaranteed-value='true' object-id='myapp_studentmark_A3721C24369D4BB59461380DD79B344D' />
+            <second-end-point is-db-set-unique-key='true' object-id='myappstaff_75F5A94ABA2A4A04AB3531AC1837C2AD' unique-key='true' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[subject_id (timetable)]' />
+              <expression op='[id (subject)]' />
+            </expression>
+            <first-end-point guaranteed-value='true' is-db-set-guaranteed-value='true' object-id='timetable_993B6AA9D8F9479DB27BF12DA82183A7' />
+            <second-end-point is-db-set-unique-key='true' object-id='subject_733103C71ACB4AEFAB8F3ADFFA1B1B2F' unique-key='true' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[id (myappstaff)]' />
+              <expression op='[staff_id (timetable)]' />
+            </expression>
+            <first-end-point is-db-set-unique-key='true' object-id='myappstaff_75F5A94ABA2A4A04AB3531AC1837C2AD' unique-key='true' />
+            <second-end-point guaranteed-value='true' is-db-set-guaranteed-value='true' object-id='timetable_993B6AA9D8F9479DB27BF12DA82183A7' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.1hqvnc30j9buy51fj19z50yqfc7f'>
+      <datasources>
+        <datasource caption='myapp_studentmark+ (college_db)' name='federated.1hqvnc30j9buy51fj19z50yqfc7f' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1hqvnc30j9buy51fj19z50yqfc7f'>
+        <column caption='Department' datatype='string' name='[department]' role='dimension' type='nominal' />
+        <column caption='Name (Myappstaff)' datatype='string' name='[name (myappstaff)]' role='dimension' type='nominal' />
+        <column-instance column='[department]' derivation='None' name='[none:department:nk]' pivot='key' type='nominal' />
+        <column-instance column='[name (myappstaff)]' derivation='None' name='[none:name (myappstaff):nk]' pivot='key' type='nominal' />
+        <column-instance column='[year_name]' derivation='None' name='[none:year_name:nk]' pivot='key' type='nominal' />
+        <column caption='Year Name' datatype='string' name='[year_name]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:department:nk]'>
+        <groupfilter function='member' level='[none:department:nk]' member='&quot;Electronics&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:name (myappstaff):nk]'>
+        <groupfilter function='level-members' level='[none:name (myappstaff):nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:year_name:nk]'>
+        <groupfilter function='level-members' level='[none:year_name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Attendance'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='myapp_studentmark+ (college_db)' name='federated.1hqvnc30j9buy51fj19z50yqfc7f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hqvnc30j9buy51fj19z50yqfc7f'>
+            <column caption='Attendance Status' datatype='string' name='[attendance_status]' role='dimension' type='nominal' />
+            <column-instance column='[student_id (myapp_attendance)]' derivation='Count' name='[cnt:student_id (myapp_attendance):qk]' pivot='key' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Department' datatype='string' name='[department]' role='dimension' type='nominal' />
+            <column caption='Name (Myappstaff)' datatype='string' name='[name (myappstaff)]' role='dimension' type='nominal' />
+            <column-instance column='[attendance_status]' derivation='None' name='[none:attendance_status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[department]' derivation='None' name='[none:department:nk]' pivot='key' type='nominal' />
+            <column-instance column='[name (myappstaff)]' derivation='None' name='[none:name (myappstaff):nk]' pivot='key' type='nominal' />
+            <column-instance column='[year_name]' derivation='None' name='[none:year_name:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' caption='Student Id (Myapp Attendance)' datatype='integer' name='[student_id (myapp_attendance)]' role='dimension' type='ordinal' />
+            <column caption='Year Name' datatype='string' name='[year_name]' role='dimension' type='nominal' />
+            <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:year_name:nk]</column>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:name (myappstaff):nk]</column>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:department:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[cnt:student_id (myapp_attendance):qk]' />
+              <text column='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[yr:date:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:attendance_status:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{3207EA0C-43E6-4FB3-A02A-D2D7BBB31833}' />
+    </worksheet>
+    <worksheet name='Count'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='myapp_studentmark+ (college_db)' name='federated.1hqvnc30j9buy51fj19z50yqfc7f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hqvnc30j9buy51fj19z50yqfc7f'>
+            <column-instance column='[id (myappstaff)]' derivation='Count' name='[cnt:id (myappstaff):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[student_id]' derivation='Count' name='[cnt:student_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Department (Myappstaff)' datatype='integer' name='[department (myappstaff)]' role='dimension' type='ordinal' />
+            <column caption='Department' datatype='string' name='[department]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Id (Myappstaff)' datatype='integer' name='[id (myappstaff)]' role='dimension' type='ordinal' />
+            <column caption='Name (Myappstaff)' datatype='string' name='[name (myappstaff)]' role='dimension' type='nominal' />
+            <column-instance column='[department (myappstaff)]' derivation='None' name='[none:department (myappstaff):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[department]' derivation='None' name='[none:department:nk]' pivot='key' type='nominal' />
+            <column-instance column='[name (myappstaff)]' derivation='None' name='[none:name (myappstaff):nk]' pivot='key' type='nominal' />
+            <column-instance column='[year_name]' derivation='None' name='[none:year_name:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' caption='Student Id' datatype='integer' name='[student_id]' role='dimension' type='ordinal' />
+            <column caption='Year Name' datatype='string' name='[year_name]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:year_name:nk]</column>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:name (myappstaff):nk]</column>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:department:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[cnt:id (myappstaff):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[cnt:student_id:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:department (myappstaff):ok]</rows>
+        <cols>([federated.1hqvnc30j9buy51fj19z50yqfc7f].[cnt:id (myappstaff):qk] + [federated.1hqvnc30j9buy51fj19z50yqfc7f].[cnt:student_id:qk])</cols>
+      </table>
+      <simple-id uuid='{BCB0A7BD-7BC0-4814-80BE-CFD4D1237F92}' />
+    </worksheet>
+    <worksheet name='Department Distribution'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='myapp_studentmark+ (college_db)' name='federated.1hqvnc30j9buy51fj19z50yqfc7f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hqvnc30j9buy51fj19z50yqfc7f'>
+            <column-instance column='[id (myapp_student)]' derivation='CountD' name='[ctd:id (myapp_student):qk]' pivot='key' type='quantitative' />
+            <column caption='Department' datatype='string' name='[department]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Id (Myapp Student)' datatype='integer' name='[id (myapp_student)]' role='dimension' type='ordinal' />
+            <column caption='Name (Myappstaff)' datatype='string' name='[name (myappstaff)]' role='dimension' type='nominal' />
+            <column-instance column='[department]' derivation='None' name='[none:department:nk]' pivot='key' type='nominal' />
+            <column-instance column='[name (myappstaff)]' derivation='None' name='[none:name (myappstaff):nk]' pivot='key' type='nominal' />
+            <column-instance column='[year_name]' derivation='None' name='[none:year_name:nk]' pivot='key' type='nominal' />
+            <column caption='Year Name' datatype='string' name='[year_name]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:year_name:nk]</column>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:name (myappstaff):nk]</column>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:department:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:department:nk]' />
+              <wedge-size column='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[ctd:id (myapp_student):qk]' />
+              <text column='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[ctd:id (myapp_student):qk]' />
+              <text column='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:department:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1.1754143238067627' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{4CD0D77D-0B32-466C-8AF7-AA75AD3B0B96}' />
+    </worksheet>
+    <worksheet name='Heat Map'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='myapp_studentmark+ (college_db)' name='federated.1hqvnc30j9buy51fj19z50yqfc7f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hqvnc30j9buy51fj19z50yqfc7f'>
+            <column caption='Department' datatype='string' name='[department]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Id (Myappstaff)' datatype='integer' name='[id (myappstaff)]' role='dimension' type='ordinal' />
+            <column caption='Name (Myappstaff)' datatype='string' name='[name (myappstaff)]' role='dimension' type='nominal' />
+            <column-instance column='[department]' derivation='None' name='[none:department:nk]' pivot='key' type='nominal' />
+            <column-instance column='[id (myappstaff)]' derivation='None' name='[none:id (myappstaff):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[name (myappstaff)]' derivation='None' name='[none:name (myappstaff):nk]' pivot='key' type='nominal' />
+            <column-instance column='[subject_name]' derivation='None' name='[none:subject_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year_name]' derivation='None' name='[none:year_name:nk]' pivot='key' type='nominal' />
+            <column caption='Subject Name' datatype='string' name='[subject_name]' role='dimension' type='nominal' />
+            <column caption='Year Name' datatype='string' name='[year_name]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:year_name:nk]</column>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:name (myappstaff):nk]</column>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:department:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <text column='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:id (myappstaff):ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:subject_name:nk]</rows>
+        <cols>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:name (myappstaff):nk]</cols>
+      </table>
+      <simple-id uuid='{15F94F79-5013-4092-9DCD-40DB33C407C4}' />
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='myapp_studentmark+ (college_db)' name='federated.1hqvnc30j9buy51fj19z50yqfc7f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hqvnc30j9buy51fj19z50yqfc7f'>
+            <column caption='Department' datatype='string' name='[department]' role='dimension' type='nominal' />
+            <column caption='Name (Myappstaff)' datatype='string' name='[name (myappstaff)]' role='dimension' type='nominal' />
+            <column-instance column='[department]' derivation='None' name='[none:department:nk]' pivot='key' type='nominal' />
+            <column-instance column='[name (myappstaff)]' derivation='None' name='[none:name (myappstaff):nk]' pivot='key' type='nominal' />
+            <column-instance column='[year_id (academicyear)]' derivation='None' name='[none:year_id (academicyear):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[year_name]' derivation='None' name='[none:year_name:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' caption='Year Id (Academicyear)' datatype='integer' name='[year_id (academicyear)]' role='dimension' type='ordinal' />
+            <column caption='Year Name' datatype='string' name='[year_name]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:year_name:nk]</column>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:name (myappstaff):nk]</column>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:department:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:year_id (academicyear):ok] / [federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:year_name:nk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{5F04B813-863A-48D6-A17E-97686467D5E4}' />
+    </worksheet>
+    <worksheet name='Staff Overview'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='myapp_studentmark+ (college_db)' name='federated.1hqvnc30j9buy51fj19z50yqfc7f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hqvnc30j9buy51fj19z50yqfc7f'>
+            <column-instance column='[department (myappstaff)]' derivation='Count' name='[cnt:department (myappstaff):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[id (myappstaff)]' derivation='CountD' name='[ctd:id (myappstaff):qk]' pivot='key' type='quantitative' />
+            <column caption='Department (Myappstaff)' datatype='integer' name='[department (myappstaff)]' role='dimension' type='ordinal' />
+            <column caption='Department' datatype='string' name='[department]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Id (Myappstaff)' datatype='integer' name='[id (myappstaff)]' role='dimension' type='ordinal' />
+            <column caption='Name (Myappstaff)' datatype='string' name='[name (myappstaff)]' role='dimension' type='nominal' />
+            <column-instance column='[department (myappstaff)]' derivation='None' name='[none:department (myappstaff):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[department]' derivation='None' name='[none:department:nk]' pivot='key' type='nominal' />
+            <column-instance column='[name (myappstaff)]' derivation='None' name='[none:name (myappstaff):nk]' pivot='key' type='nominal' />
+            <column-instance column='[year_name]' derivation='None' name='[none:year_name:nk]' pivot='key' type='nominal' />
+            <column caption='Year Name' datatype='string' name='[year_name]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:year_name:nk]</column>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:name (myappstaff):nk]</column>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:department:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[cnt:department (myappstaff):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.68066298961639404' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:department (myappstaff):ok]</rows>
+        <cols>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[ctd:id (myappstaff):qk]</cols>
+      </table>
+      <simple-id uuid='{73B024AC-BF75-4084-8DB3-5776EC1D86A9}' />
+    </worksheet>
+    <worksheet name='Staff Subject Status'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#4e79a7' fontname='Benton Sans Book' fontsize='18'>Staff Allocation</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='myapp_studentmark+ (college_db)' name='federated.1hqvnc30j9buy51fj19z50yqfc7f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hqvnc30j9buy51fj19z50yqfc7f'>
+            <column caption='Status' datatype='string' name='[Calculation_0532499430486017]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;ACTIVE&quot;' />
+            </column>
+            <column caption='Department' datatype='string' name='[department]' role='dimension' type='nominal' />
+            <column caption='Dept Name' datatype='string' name='[dept_name]' role='dimension' type='nominal' />
+            <column caption='Name (Myappstaff)' datatype='string' name='[name (myappstaff)]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0532499430486017]' derivation='None' name='[none:Calculation_0532499430486017:nk]' pivot='key' type='nominal' />
+            <column-instance column='[department]' derivation='None' name='[none:department:nk]' pivot='key' type='nominal' />
+            <column-instance column='[dept_name]' derivation='None' name='[none:dept_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[name (myappstaff)]' derivation='None' name='[none:name (myappstaff):nk]' pivot='key' type='nominal' />
+            <column-instance column='[subject_name]' derivation='None' name='[none:subject_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year_name]' derivation='None' name='[none:year_name:nk]' pivot='key' type='nominal' />
+            <column caption='Subject Name' datatype='string' name='[subject_name]' role='dimension' type='nominal' />
+            <column caption='Year Name' datatype='string' name='[year_name]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:name (myappstaff):nk]</column>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:year_name:nk]</column>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:department:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-color' scope='cols' value='#55aaff' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='tick-color' value='#00000000' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-align' data-class='subtotal' scope='cols' value='center' />
+            <format attr='vertical-align' data-class='subtotal' scope='cols' value='center' />
+            <format attr='text-align' data-class='subtotal' scope='rows' value='center' />
+            <format attr='vertical-align' data-class='subtotal' scope='rows' value='center' />
+            <format attr='border-width' scope='cols' value='3' />
+            <format attr='border-style' scope='cols' value='solid' />
+            <format attr='border-color' scope='cols' value='#f1ce63' />
+            <format attr='height' field='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:subject_name:nk]' value='33' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:subject_name:nk]' value='184' />
+            <format attr='width' field='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:name (myappstaff):nk]' value='128' />
+            <format attr='border-width' scope='cols' value='3' />
+            <format attr='border-style' scope='cols' value='solid' />
+            <format attr='border-color' scope='cols' value='#72b966' />
+            <format attr='background-color' field='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:subject_name:nk]' value='#dfe7e8' />
+            <format attr='background-color' field='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:name (myappstaff):nk]' value='#f5eddc' />
+            <format attr='background-color' field='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:Calculation_0532499430486017:nk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='field-labels-spanner'>
+            <format attr='background-color' scope='rows' value='#f2f6f7' />
+            <format attr='background-color' scope='cols' value='#e2e6f0' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' scope='cols' value='center' />
+            <format attr='vertical-align' scope='cols' value='center' />
+            <format attr='text-align' scope='rows' value='left' />
+            <format attr='vertical-align' scope='rows' value='center' />
+            <format attr='text-align' field='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:Calculation_0532499430486017:nk]' value='center' />
+            <format attr='vertical-align' field='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:Calculation_0532499430486017:nk]' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' scope='cols' value='solid' />
+            <format attr='border-color' scope='cols' value='#000000' />
+            <format attr='border-width' scope='cols' value='4' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-color' scope='rows' value='#86bcb6' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' scope='cols' value='#9d76604b' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#f1ce63' />
+            <format attr='stroke-color' scope='cols' value='#ff9d9a' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-color' scope='rows' value='#a0cbe8' />
+            <format attr='stroke-color' scope='cols' value='#059669' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#a0cbe8' />
+            <format attr='stroke-color' scope='cols' value='#a0cbe8' />
+            <format attr='stroke-size' scope='cols' value='4' />
+          </style-rule>
+          <style-rule element='header-div'>
+            <format attr='stroke-size' scope='cols' value='3' />
+            <format attr='stroke-color' scope='cols' value='#f1ce63' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#efebe8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <color column='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:Calculation_0532499430486017:nk]' />
+              <text column='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:Calculation_0532499430486017:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#757575'>Status:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:Calculation_0532499430486017:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Name (Myappstaff):&#9;</run>
+                <run bold='true'>&lt;Name &gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Subject Name:&#9;</run>
+                <run bold='true'>&lt;Subject&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='12'>&lt;</run>
+                <run fontsize='12'>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:Calculation_0532499430486017:nk]</run>
+                <run fontsize='12'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:name (myappstaff):nk] / ([federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:dept_name:nk] / [federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:subject_name:nk]))</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{9699EDAA-4C42-4CF3-A357-822EC4598B6A}' />
+    </worksheet>
+    <worksheet name='Staff to Student Ratio'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='myapp_studentmark+ (college_db)' name='federated.1hqvnc30j9buy51fj19z50yqfc7f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hqvnc30j9buy51fj19z50yqfc7f'>
+            <column caption='Student-Staff Ratio' datatype='real' name='[Calculation_0116608828649476]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([student_id]) / COUNTD([staff_id])' />
+            </column>
+            <column caption='Department (Myappstaff)' datatype='integer' name='[department (myappstaff)]' role='dimension' type='ordinal' />
+            <column caption='Department' datatype='string' name='[department]' role='dimension' type='nominal' />
+            <column caption='Name (Myappstaff)' datatype='string' name='[name (myappstaff)]' role='dimension' type='nominal' />
+            <column-instance column='[department (myappstaff)]' derivation='None' name='[none:department (myappstaff):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[department]' derivation='None' name='[none:department:nk]' pivot='key' type='nominal' />
+            <column-instance column='[name (myappstaff)]' derivation='None' name='[none:name (myappstaff):nk]' pivot='key' type='nominal' />
+            <column-instance column='[year_name]' derivation='None' name='[none:year_name:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' caption='Staff Id' datatype='integer' name='[staff_id]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Student Id' datatype='integer' name='[student_id]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_0116608828649476]' derivation='User' name='[usr:Calculation_0116608828649476:qk]' pivot='key' type='quantitative' />
+            <column caption='Year Name' datatype='string' name='[year_name]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:year_name:nk]</column>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:name (myappstaff):nk]</column>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:department:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[usr:Calculation_0116608828649476:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:department (myappstaff):ok]</rows>
+        <cols>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[usr:Calculation_0116608828649476:qk]</cols>
+      </table>
+      <simple-id uuid='{73AA8D88-921A-4717-850F-6AB1CA2B8E55}' />
+    </worksheet>
+    <worksheet name='Student Leaderboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='myapp_studentmark+ (college_db)' name='federated.1hqvnc30j9buy51fj19z50yqfc7f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hqvnc30j9buy51fj19z50yqfc7f'>
+            <column caption='True Student Average' datatype='real' name='[Calculation_0116608807878659]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [name] : AVG([internal_marks] + [external_marks]) }' />
+            </column>
+            <column caption='Department' datatype='string' name='[department]' role='dimension' type='nominal' />
+            <column caption='External Marks' datatype='integer' name='[external_marks]' role='measure' type='quantitative' />
+            <column caption='Internal Marks' datatype='integer' name='[internal_marks]' role='measure' type='quantitative' />
+            <column caption='Name (Myappstaff)' datatype='string' name='[name (myappstaff)]' role='dimension' type='nominal' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[department]' derivation='None' name='[none:department:nk]' pivot='key' type='nominal' />
+            <column-instance column='[name (myappstaff)]' derivation='None' name='[none:name (myappstaff):nk]' pivot='key' type='nominal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year_name]' derivation='None' name='[none:year_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0116608807878659]' derivation='Sum' name='[sum:Calculation_0116608807878659:qk]' pivot='key' type='quantitative' />
+            <column caption='Year Name' datatype='string' name='[year_name]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:year_name:nk]</column>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:name (myappstaff):nk]</column>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:department:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[sum:Calculation_0116608807878659:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[sum:Calculation_0116608807878659:qk]' value='N' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[sum:Calculation_0116608807878659:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.60370165109634399' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[sum:Calculation_0116608807878659:qk]</rows>
+        <cols>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:name:nk]</cols>
+      </table>
+      <simple-id uuid='{689D7226-1354-434E-BCF1-CFFD048FEC3D}' />
+    </worksheet>
+    <worksheet name='Students by department'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#4e79a7' fontname='Benton Sans Book' fontsize='18'>Department Matrix</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='myapp_studentmark+ (college_db)' name='federated.1hqvnc30j9buy51fj19z50yqfc7f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hqvnc30j9buy51fj19z50yqfc7f'>
+            <column-instance column='[id (myapp_student)]' derivation='CountD' name='[ctd:id (myapp_student):qk]' pivot='key' type='quantitative' />
+            <column caption='Department' datatype='string' name='[department]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Id (Myapp Student)' datatype='integer' name='[id (myapp_student)]' role='dimension' type='ordinal' />
+            <column caption='Name (Myappstaff)' datatype='string' name='[name (myappstaff)]' role='dimension' type='nominal' />
+            <column-instance column='[department]' derivation='None' name='[none:department:nk]' pivot='key' type='nominal' />
+            <column-instance column='[name (myappstaff)]' derivation='None' name='[none:name (myappstaff):nk]' pivot='key' type='nominal' />
+            <column-instance column='[year_name]' derivation='None' name='[none:year_name:nk]' pivot='key' type='nominal' />
+            <column caption='Year Name' datatype='string' name='[year_name]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:year_name:nk]</column>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:name (myappstaff):nk]</column>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:department:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[ctd:id (myapp_student):qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#e2ebe0</color>
+                <color>#d4e5d1</color>
+                <color>#c6e0c2</color>
+                <color>#b9dab3</color>
+                <color>#acd5a5</color>
+                <color>#9fcf97</color>
+                <color>#93c98a</color>
+                <color>#87c47d</color>
+                <color>#7cbe71</color>
+                <color>#72b966</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#efebe8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[ctd:id (myapp_student):qk]' />
+              <text column='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[ctd:id (myapp_student):qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontalignment='0' fontsize='18'>&lt;</run>
+                <run fontalignment='0' fontsize='18'>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[ctd:id (myapp_student):qk]</run>
+                <run fontalignment='0' fontsize='18'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.96651935577392578' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#f9a655' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:department:nk]</rows>
+        <cols>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:year_name:nk]</cols>
+      </table>
+      <simple-id uuid='{4ED47130-DB1F-4E0D-960D-8089AC8D7CA8}' />
+    </worksheet>
+    <worksheet name='Students by year'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#4e79a7' fontname='Benton Sans Book' fontsize='18'>Batch Headcount</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='myapp_studentmark+ (college_db)' name='federated.1hqvnc30j9buy51fj19z50yqfc7f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hqvnc30j9buy51fj19z50yqfc7f'>
+            <column-instance column='[student_id]' derivation='CountD' name='[ctd:student_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Department' datatype='string' name='[department]' role='dimension' type='nominal' />
+            <column caption='Name (Myappstaff)' datatype='string' name='[name (myappstaff)]' role='dimension' type='nominal' />
+            <column-instance column='[department]' derivation='None' name='[none:department:nk]' pivot='key' type='nominal' />
+            <column-instance column='[name (myappstaff)]' derivation='None' name='[none:name (myappstaff):nk]' pivot='key' type='nominal' />
+            <column-instance column='[year_name]' derivation='None' name='[none:year_name:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' caption='Student Id' datatype='integer' name='[student_id]' role='dimension' type='ordinal' />
+            <column caption='Year Name' datatype='string' name='[year_name]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:year_name:nk]</column>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:name (myappstaff):nk]</column>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:department:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[ctd:student_id:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <format attr='display' class='1' field='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[ctd:student_id:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#efebe8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:year_name:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.14193369448184967' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[ctd:student_id:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:year_name:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.14193369448184967' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[ctd:student_id:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:year_name:nk]' />
+              <text column='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[ctd:student_id:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='28'>&lt;</run>
+                <run fontsize='28'>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[ctd:student_id:qk]</run>
+                <run fontsize='28'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='3.5248618125915527' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1hqvnc30j9buy51fj19z50yqfc7f].[ctd:student_id:qk] + [federated.1hqvnc30j9buy51fj19z50yqfc7f].[ctd:student_id:qk])</rows>
+        <cols include-empty='true'>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:year_name:nk]</cols>
+      </table>
+      <simple-id uuid='{E6996185-610A-4BC3-8BDB-26C1F21EC7DE}' />
+    </worksheet>
+    <worksheet name='Subject Performance Breakdown'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='myapp_studentmark+ (college_db)' name='federated.1hqvnc30j9buy51fj19z50yqfc7f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hqvnc30j9buy51fj19z50yqfc7f'>
+            <column caption='Department' datatype='string' name='[department]' role='dimension' type='nominal' />
+            <column caption='External Marks' datatype='integer' name='[external_marks]' role='measure' type='quantitative' />
+            <column caption='Internal Marks' datatype='integer' name='[internal_marks]' role='measure' type='quantitative' />
+            <column caption='Name (Myappstaff)' datatype='string' name='[name (myappstaff)]' role='dimension' type='nominal' />
+            <column-instance column='[department]' derivation='None' name='[none:department:nk]' pivot='key' type='nominal' />
+            <column-instance column='[external_marks]' derivation='None' name='[none:external_marks:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[internal_marks]' derivation='None' name='[none:internal_marks:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[name (myappstaff)]' derivation='None' name='[none:name (myappstaff):nk]' pivot='key' type='nominal' />
+            <column-instance column='[subject_name]' derivation='None' name='[none:subject_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year_name]' derivation='None' name='[none:year_name:nk]' pivot='key' type='nominal' />
+            <column caption='Subject Name' datatype='string' name='[subject_name]' role='dimension' type='nominal' />
+            <column caption='Year Name' datatype='string' name='[year_name]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:year_name:nk]</column>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:name (myappstaff):nk]</column>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:department:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:external_marks:qk]' field-type='quantitative' max='63' min='0' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:internal_marks:qk]' field-type='quantitative' max='43' min='0' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.96651935577392578' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:external_marks:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:external_marks:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.49375692009925842' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:internal_marks:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:internal_marks:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.49375692009925842' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:subject_name:nk]</rows>
+        <cols>([federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:external_marks:qk] + [federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:internal_marks:qk])</cols>
+      </table>
+      <simple-id uuid='{98031C4E-D071-458E-A2D0-0DB38F94D248}' />
+    </worksheet>
+    <worksheet name='Total Marks'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontsize='18'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='myapp_studentmark+ (college_db)' name='federated.1hqvnc30j9buy51fj19z50yqfc7f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hqvnc30j9buy51fj19z50yqfc7f'>
+            <column-instance column='[total_marks]' derivation='Avg' name='[avg:total_marks:qk]' pivot='key' type='quantitative' />
+            <column caption='Department' datatype='string' name='[department]' role='dimension' type='nominal' />
+            <column caption='Name (Myappstaff)' datatype='string' name='[name (myappstaff)]' role='dimension' type='nominal' />
+            <column-instance column='[department]' derivation='None' name='[none:department:nk]' pivot='key' type='nominal' />
+            <column-instance column='[name (myappstaff)]' derivation='None' name='[none:name (myappstaff):nk]' pivot='key' type='nominal' />
+            <column-instance column='[year_name]' derivation='None' name='[none:year_name:nk]' pivot='key' type='nominal' />
+            <column caption='Total Marks' datatype='integer' name='[total_marks]' role='measure' type='quantitative' />
+            <column caption='Year Name' datatype='string' name='[year_name]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:year_name:nk]</column>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:name (myappstaff):nk]</column>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:department:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#059669' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[avg:total_marks:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='30'>&lt;</run>
+                <run fontsize='30'>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[avg:total_marks:qk]</run>
+                <run fontsize='30'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{3D8745E9-B1DC-4B1F-B8E8-D0D1D763CB04}' />
+    </worksheet>
+    <worksheet name='Total Staff'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontsize='18'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='myapp_studentmark+ (college_db)' name='federated.1hqvnc30j9buy51fj19z50yqfc7f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hqvnc30j9buy51fj19z50yqfc7f'>
+            <column-instance column='[id (myappstaff)]' derivation='CountD' name='[ctd:id (myappstaff):qk]' pivot='key' type='quantitative' />
+            <column caption='Department' datatype='string' name='[department]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Id (Myappstaff)' datatype='integer' name='[id (myappstaff)]' role='dimension' type='ordinal' />
+            <column caption='Name (Myappstaff)' datatype='string' name='[name (myappstaff)]' role='dimension' type='nominal' />
+            <column-instance column='[department]' derivation='None' name='[none:department:nk]' pivot='key' type='nominal' />
+            <column-instance column='[name (myappstaff)]' derivation='None' name='[none:name (myappstaff):nk]' pivot='key' type='nominal' />
+            <column-instance column='[year_name]' derivation='None' name='[none:year_name:nk]' pivot='key' type='nominal' />
+            <column caption='Year Name' datatype='string' name='[year_name]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:year_name:nk]</column>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:name (myappstaff):nk]</column>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:department:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#d97706' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[ctd:id (myappstaff):qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='30'>&lt;</run>
+                <run fontsize='30'>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[ctd:id (myappstaff):qk]</run>
+                <run fontsize='30'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{BC131E3B-5465-4B3F-A6A1-EAFD55B125C8}' />
+    </worksheet>
+    <worksheet name='Total Students'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontsize='18'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='myapp_studentmark+ (college_db)' name='federated.1hqvnc30j9buy51fj19z50yqfc7f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hqvnc30j9buy51fj19z50yqfc7f'>
+            <column-instance column='[id (myapp_student)]' derivation='CountD' name='[ctd:id (myapp_student):qk]' pivot='key' type='quantitative' />
+            <column caption='Department' datatype='string' name='[department]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Id (Myapp Student)' datatype='integer' name='[id (myapp_student)]' role='dimension' type='ordinal' />
+            <column caption='Name (Myappstaff)' datatype='string' name='[name (myappstaff)]' role='dimension' type='nominal' />
+            <column-instance column='[department]' derivation='None' name='[none:department:nk]' pivot='key' type='nominal' />
+            <column-instance column='[name (myappstaff)]' derivation='None' name='[none:name (myappstaff):nk]' pivot='key' type='nominal' />
+            <column-instance column='[year_name]' derivation='None' name='[none:year_name:nk]' pivot='key' type='nominal' />
+            <column caption='Year Name' datatype='string' name='[year_name]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:year_name:nk]</column>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:name (myappstaff):nk]</column>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:department:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#55aaff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[ctd:id (myapp_student):qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='30'>&lt;</run>
+                <run fontsize='30'>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[ctd:id (myapp_student):qk]</run>
+                <run fontsize='30'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{F0F6AA37-0150-41B1-8DC7-C5694B798809}' />
+    </worksheet>
+    <worksheet name='Total Subjects'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontsize='18'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='myapp_studentmark+ (college_db)' name='federated.1hqvnc30j9buy51fj19z50yqfc7f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hqvnc30j9buy51fj19z50yqfc7f'>
+            <column-instance column='[id (subject)]' derivation='CountD' name='[ctd:id (subject):qk]' pivot='key' type='quantitative' />
+            <column caption='Department' datatype='string' name='[department]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Id (Subject)' datatype='integer' name='[id (subject)]' role='dimension' type='ordinal' />
+            <column caption='Name (Myappstaff)' datatype='string' name='[name (myappstaff)]' role='dimension' type='nominal' />
+            <column-instance column='[department]' derivation='None' name='[none:department:nk]' pivot='key' type='nominal' />
+            <column-instance column='[name (myappstaff)]' derivation='None' name='[none:name (myappstaff):nk]' pivot='key' type='nominal' />
+            <column-instance column='[year_name]' derivation='None' name='[none:year_name:nk]' pivot='key' type='nominal' />
+            <column caption='Year Name' datatype='string' name='[year_name]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:year_name:nk]</column>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:name (myappstaff):nk]</column>
+            <column>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:department:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#7c3aed' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[ctd:id (subject):qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='30'>&lt;</run>
+                <run fontsize='30'>[federated.1hqvnc30j9buy51fj19z50yqfc7f].[ctd:id (subject):qk]</run>
+                <run fontsize='30'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{49188B24-FD83-4104-9355-52ADFEE3FF93}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='College_DB'>
+      <style />
+      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='48958' id='9' param='horz' type-v2='layout-flow' w='98828' x='586' y='50000'>
+            <zone h='48958' id='7' type-v2='layout-basic' w='98828' x='586' y='50000'>
+              <zone h='48958' id='5' name='Student Leaderboard' w='68228' x='31186' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='48958' id='6' name='Department Distribution' w='30600' x='586' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='48958' id='3' name='Subject Performance Breakdown' w='98828' x='586' y='1042'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='solid' />
+              <format attr='border-width' value='1' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='900' minheight='900' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='25' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='24' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' h='48958' id='3' is-fixed='true' name='Subject Performance Breakdown' w='98828' x='586' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48958' id='6' is-fixed='true' name='Department Distribution' w='30600' x='586' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48958' id='5' is-fixed='true' name='Student Leaderboard' w='68228' x='31186' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{0D9CB1EE-DEFB-4CDB-A60B-F52A607001FA}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='3' name='Staff Overview' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='18' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='17' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Staff Overview' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{1E656B2B-ED60-4777-A9BA-739F93CA01BA}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 3'>
+      <style>
+        <style-rule element='dash-text'>
+          <format attr='text-align' id='dash-text_19' value='center' />
+          <format attr='vertical-align' id='dash-text_19' value='center' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1200' minheight='800' minwidth='1200' preset-index='1' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='myapp_studentmark+ (college_db)' name='federated.1hqvnc30j9buy51fj19z50yqfc7f' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1hqvnc30j9buy51fj19z50yqfc7f'>
+        <column caption='Department' datatype='string' name='[department]' role='dimension' type='nominal' />
+        <column caption='Name (Myappstaff)' datatype='string' name='[name (myappstaff)]' role='dimension' type='nominal' />
+        <column-instance column='[department]' derivation='None' name='[none:department:nk]' pivot='key' type='nominal' />
+        <column-instance column='[name (myappstaff)]' derivation='None' name='[none:name (myappstaff):nk]' pivot='key' type='nominal' />
+        <column-instance column='[year_name]' derivation='None' name='[none:year_name:nk]' pivot='key' type='nominal' />
+        <column caption='Year Name' datatype='string' name='[year_name]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='24' param='horz' type-v2='layout-flow' w='98666' x='667' y='1000'>
+            <zone h='98000' id='22' type-v2='layout-basic' w='98666' x='667' y='1000'>
+              <zone h='60500' id='13' param='horz' type-v2='layout-flow' w='98666' x='667' y='38500'>
+                <zone h='60500' id='11' type-v2='layout-basic' w='98666' x='667' y='38500'>
+                  <zone h='32750' id='21' name='Staff Subject Status' w='43166' x='56167' y='38500'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='1' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='60500' id='44' is-fixed='true' type-v2='layout-basic' w='55500' x='667' y='38500'>
+                    <zone h='60500' id='26' param='horz' type-v2='layout-flow' w='24666' x='667' y='38500'>
+                      <zone fixed-size='303' h='60500' id='3' is-fixed='true' name='Students by year' w='24666' x='667' y='38500'>
+                        <layout-cache minheight='185' type-h='scalable' type-w='cell' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='solid' />
+                          <format attr='border-width' value='1' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                    <zone h='60500' id='45' param='horz' type-v2='layout-flow' w='30834' x='25333' y='38500'>
+                      <zone h='60500' id='5' name='Students by department' w='30834' x='25333' y='38500'>
+                        <layout-cache cell-count-w='2' non-cell-size-w='81' type-h='cell' type-w='cell' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='solid' />
+                          <format attr='border-width' value='1' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                  </zone>
+                  <zone h='27750' id='27' param='vert' type-v2='layout-flow' w='43166' x='56167' y='71250'>
+                    <zone fixed-size='232' forceUpdate='true' h='27750' id='28' is-fixed='true' type-v2='text' w='43166' x='56167' y='71250'>
+                      <formatted-text>
+                        <run bold='true' fontcolor='#4e79a7' fontname='Benton Sans Book' fontsize='18'>QUICK ALERTS</run>
+                        <run>Æ&#10;</run>
+                        <run fontcolor='#000000' fontname='Benton Sans Book'>Æ&#10;</run>
+                        <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>📌 </run>
+                        <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>Attendance Today:</run>
+                        <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'> 92.5% </run>
+                        <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12' italic='true'>(Updated 09:00 AM)</run>
+                        <run>Æ&#10;</run>
+                        <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>&#10;📅 </run>
+                        <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>Exam Date Updated:</run>
+                        <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'> Mid-Term Exams shifted to Nov 15th</run>
+                        <run>Æ&#10;</run>
+                        <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>&#10;🔔 </run>
+                        <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>Faculty Notice:</run>
+                        <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'> CSE Departmental meeting at 3:00 PM</run>
+                      </formatted-text>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='solid' />
+                        <format attr='border-width' value='1' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='27250' id='20' param='horz' type-v2='layout-flow' w='98666' x='667' y='11250'>
+                <zone h='27250' id='6' name='Total Students' w='24666' x='667' y='11250'>
+                  <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='27250' id='7' name='Total Marks' w='24666' x='25333' y='11250'>
+                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='27250' id='9' name='Total Staff' w='24666' x='49999' y='11250'>
+                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='27250' id='10' name='Total Subjects' w='24666' x='74665' y='11250'>
+                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='10250' id='33' param='horz' type-v2='layout-flow' w='98666' x='667' y='1000'>
+                <zone forceUpdate='true' h='10250' id='19' type-v2='text' w='55166' x='667' y='1000'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='18'>🌐 </run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='18'>IPCS Global: Campus Intelligence System</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='background-color' value='#f9f3ef' />
+                  </zone-style>
+                </zone>
+                <zone h='10250' id='16' mode='checkdropdown' name='Total Students' param='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:year_name:nk]' type-v2='filter' values='database' w='14500' x='55833' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                    <format attr='background-color' value='#7c3aed' />
+                  </zone-style>
+                </zone>
+                <zone h='10250' id='15' mode='checkdropdown' name='Total Students' param='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:name (myappstaff):nk]' type-v2='filter' values='database' w='14500' x='70333' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                    <format attr='background-color' value='#7c3aed' />
+                  </zone-style>
+                </zone>
+                <zone h='10250' id='41' mode='checkdropdown' name='Staff Subject Status' param='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:department:nk]' type-v2='filter' values='database' w='14500' x='84833' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                    <format attr='background-color' value='#7c3aed' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2050' minheight='2050' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='47' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='46' param='vert' type-v2='layout-flow' w='98666' x='667' y='1000'>
+                <zone forceUpdate='true' h='10250' id='19' type-v2='text' w='55166' x='667' y='1000'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='18'>🌐 </run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='18'>IPCS Global: Campus Intelligence System</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#f9f3ef' />
+                  </zone-style>
+                </zone>
+                <zone h='10250' id='16' mode='checkdropdown' name='Total Students' param='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:year_name:nk]' type-v2='filter' values='database' w='14500' x='55833' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#7c3aed' />
+                  </zone-style>
+                </zone>
+                <zone h='10250' id='15' mode='checkdropdown' name='Total Students' param='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:name (myappstaff):nk]' type-v2='filter' values='database' w='14500' x='70333' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#7c3aed' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='208' h='27250' id='6' is-fixed='true' name='Total Students' w='24666' x='667' y='11250'>
+                  <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='208' h='27250' id='7' is-fixed='true' name='Total Marks' w='24666' x='25333' y='11250'>
+                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='208' h='27250' id='9' is-fixed='true' name='Total Staff' w='24666' x='49999' y='11250'>
+                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='208' h='27250' id='10' is-fixed='true' name='Total Subjects' w='24666' x='74665' y='11250'>
+                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='60500' id='3' is-fixed='true' name='Students by year' w='24666' x='667' y='38500'>
+                  <layout-cache minheight='185' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='60500' id='5' is-fixed='true' name='Students by department' w='30834' x='25333' y='38500'>
+                  <layout-cache cell-count-w='2' non-cell-size-w='81' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10250' id='41' mode='checkdropdown' name='Staff Subject Status' param='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:department:nk]' type-v2='filter' values='database' w='14500' x='84833' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#7c3aed' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='252' h='32750' id='21' is-fixed='true' name='Staff Subject Status' w='43166' x='56167' y='38500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='232' forceUpdate='true' h='27750' id='28' type-v2='text' w='43166' x='56167' y='71250'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#4e79a7' fontname='Benton Sans Book' fontsize='18'>QUICK ALERTS</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book'>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>📌 </run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>Attendance Today:</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'> 92.5% </run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12' italic='true'>(Updated 09:00 AM)</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>&#10;📅 </run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>Exam Date Updated:</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'> Mid-Term Exams shifted to Nov 15th</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>&#10;🔔 </run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>Faculty Notice:</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'> CSE Departmental meeting at 3:00 PM</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C04CB020-71CD-49A2-BB27-C646D04DCA95}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Subject Performance Breakdown'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{2AFF0739-F71D-4283-8203-E96007F76C63}' />
+    </window>
+    <window class='worksheet' name='Student Leaderboard'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{A64A09F0-A74D-48DE-BBE7-817F2E9FA375}' />
+    </window>
+    <window class='worksheet' name='Department Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:department:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{38D871D5-A7CA-4499-B0C5-3F53C740C602}' />
+    </window>
+    <window class='worksheet' name='Staff Overview'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{48BEABEA-0644-4907-B088-66E11242D111}' />
+    </window>
+    <window class='dashboard' name='College_DB'>
+      <viewpoints>
+        <viewpoint name='Department Distribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Student Leaderboard'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Subject Performance Breakdown'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{6D63510A-8850-446B-B825-046F429C87EC}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Staff Overview'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{3A740E78-2D8E-4D00-B21D-58C3BD2410D6}' />
+    </window>
+    <window class='worksheet' name='Staff to Student Ratio'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7F6FE4BF-AA11-4AD0-AAE9-A43756CE93B9}' />
+    </window>
+    <window class='worksheet' name='Heat Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AF17EEE4-ECDA-449F-A760-8EDC6A61986D}' />
+    </window>
+    <window class='worksheet' name='Count'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{840A3A74-0199-4777-8A34-1F7320B2DAE4}' />
+    </window>
+    <window class='worksheet' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2B996494-40DB-423E-ACEF-A1D7C85144B5}' />
+    </window>
+    <window class='worksheet' name='Attendance'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B615A375-4F39-4F4E-A2AC-7A1E01142B95}' />
+    </window>
+    <window class='worksheet' name='Students by year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:year_name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{45E230A5-5008-4934-92D3-97B974F68496}' />
+    </window>
+    <window class='worksheet' name='Students by department'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[ctd:id (myapp_student):qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{CA23B82A-2DC8-4F3B-8D52-2369C7E394CC}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 3'>
+      <viewpoints>
+        <viewpoint name='Staff Subject Status'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Students by department'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Students by year'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Marks'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Staff'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Students'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Subjects'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{2460AA50-1F07-452B-8EFD-3D6B8D7C46AD}' />
+    </window>
+    <window class='worksheet' name='Total Students'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{35982445-66BC-4139-818D-CF658E886AA2}' />
+    </window>
+    <window class='worksheet' name='Total Marks'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{5007AD64-01A9-4D84-9954-4AB6A1DC000E}' />
+    </window>
+    <window class='worksheet' name='Total Subjects'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{98BDBEBA-81E2-4FF0-B85D-21B23BE45027}' />
+    </window>
+    <window class='worksheet' name='Total Staff'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{DBDCF240-0E23-4AE2-BAC2-EFB317E5183C}' />
+    </window>
+    <window class='worksheet' name='Staff Subject Status'>
+      <cards>
+        <edge name='left'>
+          <strip size='190'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:Calculation_0532499430486017:nk]' type='color' />
+            <card param='[federated.1hqvnc30j9buy51fj19z50yqfc7f].[none:dept_name:nk]' type='highlighter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{2C7E0586-20DE-484C-86F0-CEB745A84C6F}' />
+    </window>
+  </windows>
+</workbook>
